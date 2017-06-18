@@ -1,4 +1,7 @@
 
+def get_lines_from_docx(docx_url):
+    return get_lines_from_xml(docx_to_xml(docx_url))
+
 def docx_to_xml(srcurl):
     import zipfile as Z
     import xml.etree.ElementTree as ET
